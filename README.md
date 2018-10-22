@@ -1,2 +1,9 @@
 # log4jjs
-log for javascript
+Log for javascript.
+
+## installation
+```
+npm install log4js
+```
+
+## usage
