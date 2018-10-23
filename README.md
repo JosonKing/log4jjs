@@ -1,9 +1,9 @@
-# log4jjs
+# log4jkjs
 Log for javascript.
 
 ## installation
 ```bash
-npm install log4jjs
+npm install log4jkjs
 ```
 
 ## usage
@@ -26,7 +26,3 @@ logger.debug('hello log');
 2018-10-23 16:17:07.81 WARN => hello log
 2018-10-23 16:17:07.82 DEBUG => hello log
 ```
-
-## Keywords
-
-**npm, node, log, javascript, es6**

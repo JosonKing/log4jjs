@@ -2,7 +2,7 @@
 
 var utils = module.exports;
 
-utils.shouldLog = function (level, methodLevel) {
+utils.shouldLog = function(level, methodLevel) {
   var levelNumber = 0;
   if (level.toLowerCase() == 'info') {
     levelNumber = 1;
@@ -27,7 +27,7 @@ utils.shouldLog = function (level, methodLevel) {
  * @param {string} fmt 时间格式
  * @param {Date} date 时间
  */
-utils.dateFtt = function (fmt, date) {
+utils.dateFtt = function(fmt, date) {
   var o = {
     'M+': date.getMonth() + 1, // 月份
     'd+': date.getDate(), // 日
@@ -42,7 +42,7 @@ utils.dateFtt = function (fmt, date) {
   }
   for (var k in o) {
     if (new RegExp('(' + k + ')').test(fmt)) {
-      fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ('00' + o[k]).substr(('' + o[k]).length));
+      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (('00' + o[k]).substr(('' + o[k]).length)));
     }
   }
   return fmt;
