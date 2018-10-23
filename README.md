@@ -2,8 +2,31 @@
 Log for javascript.
 
 ## installation
-```
+```bash
 npm install log4jjs
 ```
 
 ## usage
+```javascript
+var logger = require('./index');
+
+// logger.config();
+logger.config('log', 'red', 'console');
+logger.log('hello log', 'log2', 'log3');
+logger.info('hello log');
+logger.error('hello log');
+logger.warn('hello log');
+logger.debug('hello log');
+```
+> Output
+```bash
+2018-10-23 16:17:07.75 LOG => hello log log2 log3
+2018-10-23 16:17:07.80 INFO => hello log
+2018-10-23 16:17:07.81 ERROR => hello log
+2018-10-23 16:17:07.81 WARN => hello log
+2018-10-23 16:17:07.82 DEBUG => hello log
+```
+
+## Keywords
+
+**npm, node, log, javascript, es6**

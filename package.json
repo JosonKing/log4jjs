@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JosonKing/log4jjs.git"
+  },
   "keywords": [
     "npm",
     "node",
