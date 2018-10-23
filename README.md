@@ -3,7 +3,7 @@ Log for javascript.
 
 ## installation
 ```
-npm install log4js
+npm install log4jjs
 ```
 
 ## usage

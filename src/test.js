@@ -1,3 +1,3 @@
-var Logger = require('./index');
-
-Logger('hello log');
+var { log, config } = require('./index');
+config('DEBUG', 'blue');
+log('hello log');
