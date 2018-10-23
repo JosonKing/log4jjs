@@ -10,7 +10,7 @@ npm install log4jkjs
 ```javascript
 var logger = require('./index');
 
-// logger.config();
+// logger.config(); // default: 'ERROR', 'black', 'console'
 logger.config('log', 'red', 'console');
 logger.log('hello log', 'log2', 'log3');
 logger.info('hello log');
