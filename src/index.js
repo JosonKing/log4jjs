@@ -1,4 +1,4 @@
-var FileSaver = require('file-saver');
+// var FileSaver = require('file-saver');
 
 function shouldLog(level, methodLevel) {
   var levelNumber = 0;
@@ -52,10 +52,10 @@ module.exports.config = function (level, color, appender) {
 module.exports.log = function (...message) {
   if (shouldLog(this.level, 0)) {
     if (this.appender.toLowerCase() == 'file') {
-      var blob = new Blob(["Hello, world!"], {
-        type: "text/plain;charset=utf-8"
-      });
-      FileSaver.saveAs(blob, "helloworld.txt");
+      // var blob = new Blob(["Hello, world!"], {
+      //   type: "text/plain;charset=utf-8"
+      // });
+      // FileSaver.saveAs(blob, "helloworld.txt");
     } else {
       console.log(dateFtt('yyyy-MM-dd hh:mm:ss.S', new Date()), 'LOG', '=>', ...message);
     }
